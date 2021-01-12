@@ -1,0 +1,179 @@
+#buttons{
+  position: relative;  
+ }
+ #buttons-tag{  
+   text-align: center;  
+ } 
+ body {   
+  overflow: hidden; /* Hide scrollbars */
+  /* background-image: url("https://media4.giphy.com/media/3ov9jEnypymbFQJ9CM/giphy.gif"); */
+  background-image: url("https://media4.giphy.com/media/JFU9jkxlGIxHO/giphy.gif");
+  /* background-image: url("https://media.giphy.com/media/fLvOuzy2taXynraSwR/giphy.gif"); */
+  /* background-image: url("https://media.giphy.com/media/fLvOuzy2taXynraSwR/giphy.gif"); */
+  /* background-image: url("https://media0.giphy.com/media/oOrRt0rIDNtPa/giphy.gif"); */
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  opacity: 0.95;           
+}       
+#finding-nemo{                      
+  text-align: center;         
+  /* color: rgb(17, 40, 53);      */  
+  color: rgb(4, 68, 124);          
+  /* color: rgb(59, 135, 175);     */  
+  font-family: cursive; 
+  font-size: 35px;             
+  margin-top: -5px;       
+}              
+#button-start-tag {              
+  text-align: center;     
+  font-family: sans-serif;  
+}  
+#hard-mode{ 
+  background-color: rgb(96, 103, 109);       
+  border: none;  
+  color: white; 
+  padding: 6px 8px;
+  font-size: 24px;
+  font: bolder;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-family: sans-serif;   
+}
+#button-start{ 
+  background-color: DodgerBlue;       
+  border: none;  
+  color: white;  
+  padding: 6px 8px;
+  font-size: 24px;
+  font: bolder;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 5px;
+  font-family: sans-serif; 
+}
+#button-start:hover {
+  background-color:rgb(238, 132, 234);
+}
+#hard-mode:hover {
+  background-color:rgb(238, 132, 234);
+}
+#button-down {
+  background-color: rgb(98, 150, 189);
+  position: absolute;
+  border-radius: 4px;
+  top: 60px;
+  left: 220px;
+  color: antiquewhite;
+}
+#button-up {
+  background-color: rgb(98, 150, 189);
+  border-radius: 4px;
+  position: absolute;
+  width: 50px;
+  left: 220px;
+  color: antiquewhite;
+}
+#button-left {
+  background-color: rgb(238, 132, 234);
+  border-radius: 4px;
+  position: absolute;
+  left: 160px;
+  top: 30px;
+  width: 50px;  
+  color: antiquewhite; 
+
+}
+#button-right {
+  background-color: rgb(238, 132, 234);
+  border-radius: 4px;
+  position: absolute;
+  left: 280px;
+  color: antiquewhite; 
+  top: 30px; 
+ 
+}  
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  #button-up {display: none;}
+  #button-down {display: none;}
+  #button-left {display: none;}
+  #button-right {display: none;}
+}
+
+#canvas {
+  width: 60%;
+  text-align:center;
+  border-radius: 10px;
+}
+
+#canvas {
+  display: inline;
+}
+#centerit {
+ text-align: center;
+}
+
+#dropbtn {
+
+  position: absolute;
+
+  top: -35px;
+  left: 76% ;
+  cursor: pointer;
+  /* z-index: 30; */
+}
+ 
+.dropdown {
+  position: relative;   
+  
+}
+
+ 
+.dropdown-content  {
+  display: none;
+  position: absolute;
+  background-color: #9880c7;
+  width: 250px;
+  height: 350px;
+  top: -5px;
+  left: 76.3%;
+  border-radius: 15px;
+  color: aliceblue;
+  font:16px ;
+  font-weight: 600;
+  font-family: sans-serif; 
+  margin-right: 5px;
+
+}
+.instruction {
+  margin-right: 10px; 
+  /* background-color: brown; */  
+}      
+.dropdown-content p:after {     
+  content: ".";   
+  position: relative;      
+  top: -25px;  
+  left: 15px;          
+  display: block;          
+  margin-right: 10px;                   
+  width: 0;           
+  height: 0;        
+  font-size: 0;         
+  line-height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px;
+  border-color: transparent transparent #9880c7;
+}
+ 
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+}
